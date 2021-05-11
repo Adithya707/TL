@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adi flask</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 class='text-center'>Image Classifier</h1>
+        <form class="text-center" action="/" method="POST" enctype="multipart/form-data">
+             <input type="file" name="imagefile" class="form-control">
+             <input type="submit" value="Predict Image" class="btn btn-primary mt-3">
+             {% if prediction %}
+               <p class="text-center">Image is a {{prediction}}</p>
+             {% endif %}
+        </form>
+    </body>
+</html>

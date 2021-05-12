@@ -1,8 +1,13 @@
+appdirs
+certifi
+click
+distlib
 Flask
 gunicorn
 Jinja2
 jsons
 keras
-
+Werkzeug
+wincertstore
 
 

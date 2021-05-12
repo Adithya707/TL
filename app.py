@@ -3,13 +3,13 @@ from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.applications.vgg16 import preprocess_input
 #from keras.applications.vgg16 import decode_predictions
-from keras.applications.vgg16 import VGG16
-from tensorflow import keras
+#from keras.applications.vgg16 import VGG16
+from keras.models import load_model
 import json
 
 app = Flask(__name__)
 #model = VGG16()
-model = keras.models.load_model('model.h5')
+model =load_model('model.h5')
 
 @app.route('/',methods=['GET'])
 def hello_world():

@@ -7,7 +7,9 @@ gunicorn
 Jinja2
 jsons
 keras
+tensorflow
 Werkzeug
 wincertstore
+
 
 

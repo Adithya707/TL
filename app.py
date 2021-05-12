@@ -51,4 +51,4 @@ def decode_predictions(preds, top=4, class_list_path='index.json'):
 
 
 if __name__ == '__main__':
-    app.run(port=3000, debug=False,threaded=False)
+    app.run()
